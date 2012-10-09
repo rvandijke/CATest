@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Layer : CALayer
+@interface Layer : CALayer {
+    CGFloat _animationFactor;
+}
+
+@property (nonatomic, assign) CGFloat animationFactor;
 
 @end

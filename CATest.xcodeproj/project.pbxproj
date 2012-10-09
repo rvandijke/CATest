@@ -18,6 +18,8 @@
 		00ADF3501623FBE100689722 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ADF34F1623FBE100689722 /* Default-568h@2x.png */; };
 		00ADF3531623FBE100689722 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADF3521623FBE100689722 /* ViewController.m */; };
 		00ADF3561623FBE100689722 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00ADF3541623FBE100689722 /* ViewController.xib */; };
+		00ADF35E1623FBED00689722 /* Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ADF35D1623FBED00689722 /* Layer.m */; };
+		00ADF3601623FBF700689722 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ADF35F1623FBF700689722 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		00ADF3511623FBE100689722 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		00ADF3521623FBE100689722 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		00ADF3551623FBE100689722 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		00ADF35C1623FBED00689722 /* Layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layer.h; sourceTree = "<group>"; };
+		00ADF35D1623FBED00689722 /* Layer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layer.m; sourceTree = "<group>"; };
+		00ADF35F1623FBF700689722 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00ADF3601623FBF700689722 /* QuartzCore.framework in Frameworks */,
 				00ADF33A1623FBE100689722 /* UIKit.framework in Frameworks */,
 				00ADF33C1623FBE100689722 /* Foundation.framework in Frameworks */,
 				00ADF33E1623FBE100689722 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +62,7 @@
 		00ADF32A1623FBE100689722 = {
 			isa = PBXGroup;
 			children = (
+				00ADF35F1623FBF700689722 /* QuartzCore.framework */,
 				00ADF33F1623FBE100689722 /* CATest */,
 				00ADF3381623FBE100689722 /* Frameworks */,
 				00ADF3361623FBE100689722 /* Products */,
@@ -89,6 +96,8 @@
 				00ADF3521623FBE100689722 /* ViewController.m */,
 				00ADF3541623FBE100689722 /* ViewController.xib */,
 				00ADF3401623FBE100689722 /* Supporting Files */,
+				00ADF35C1623FBED00689722 /* Layer.h */,
+				00ADF35D1623FBED00689722 /* Layer.m */,
 			);
 			path = CATest;
 			sourceTree = "<group>";
@@ -176,6 +185,7 @@
 				00ADF3461623FBE100689722 /* main.m in Sources */,
 				00ADF34A1623FBE100689722 /* AppDelegate.m in Sources */,
 				00ADF3531623FBE100689722 /* ViewController.m in Sources */,
+				00ADF35E1623FBED00689722 /* Layer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Layer.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,17 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    Layer *layer = [Layer layer];
+    [self.view.layer addSublayer:layer];
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"animationFactor"];
+    animation.fromValue = @0;
+    animation.toValue = @1;
+    animation.duration = 3.0;
+    [layer addAnimation:animation forKey:nil];
 }
 
 @end
